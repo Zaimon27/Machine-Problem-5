@@ -1,0 +1,86 @@
+body {
+    background: url('/assets/food.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    background-attachment: fixed; 
+    color: #fff; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: -1;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background: #7c300cc7; 
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.restaurant-title {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    color: #f0b57e; 
+}
+
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.03);
+}
+
+
+.dish-image, .small-description-image {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.dish-image:hover {
+    transform: scale(1.05);
+}
+
+
+.btn-custom {
+    background: #FF4136;  
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover {
+    background: #C0392B; 
+}
+
+
+.additional-info {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.additional-info.active {
+    display: block;
+    opacity: 1;
+}
